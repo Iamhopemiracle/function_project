@@ -1,3 +1,4 @@
+import 'package:function_project/views/autocomplete/autocomplete_view.dart';
 import 'package:function_project/views/home/home_view.dart';
 import 'package:function_project/views/selection_area/selection_area_view.dart';
 import 'package:get/get.dart';
@@ -21,11 +22,12 @@ class AppPages {
       page: () => SelectionAreaPage(),
     ),
 
-    // GetPage(
-    //   name: Routes.TEXT,
-    //   page: () => TextPage(),
-    // ),
-    //
+    //自动填充页面
+    GetPage(
+      name: Routes.AUTOCOMPLETE,
+      page: () => AutocompletePage(),
+    ),
+
     // GetPage(
     //   name: Routes.TEXTDETAIL,
     //   page: () => TextDetailPage(),

@@ -7,4 +7,5 @@ abstract class Routes {
   static const ROOT = '/';
 
   static const SELECTION_AREA = '/selection_area';
+  static const AUTOCOMPLETE = '/autocomplete';
 }

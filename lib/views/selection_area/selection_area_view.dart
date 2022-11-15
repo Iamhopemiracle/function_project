@@ -13,9 +13,10 @@ class SelectionAreaPage extends StatelessWidget
   @override
   Widget build(BuildContext context) {
     controller.getPlatform(context);
+    var arg = Get.arguments;
     return Scaffold(
       appBar: AppBar(
-        title: Text('SelectionArea 可复制文本'),
+        title: Text(arg),
         centerTitle: true,
       ),
       body: SelectionArea(
@@ -25,7 +26,6 @@ class SelectionAreaPage extends StatelessWidget
       ),
     );
   }
-
 
   ///下面是继承TextSelectionControls的方法，必须实现的方法
   ///如果要修改对应的功能，可以在对应的方法里修改
